@@ -17,4 +17,4 @@ for root, _, files in os.walk("C:/Users/alan8/Desktop/hydro_logs/149/"): #圖片
             videoWriter.write(img)
             a  = a + 6 #1秒幾張圖
         i = i + 1
-videoWriter.release() #不知道 不佳也能輸出的樣子
+videoWriter.release() #不知道 不加也能輸出的樣子
