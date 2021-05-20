@@ -6,8 +6,8 @@ i = 1
 videoWriter = cv2.VideoWriter('149.avi', cv2.VideoWriter_fourcc(*'MJPG'), 25, (1280,720)) #輸出影片格式
 for root, _, files in os.walk("C:/Users/alan8/Desktop/hydro_logs/149/"): #圖片所在資料夾
     for name in files:
-        peko = os.path.join(root)
-        ina = peko + 'origin' + str(i) + '.png' #檔案位置 檔案名稱是1開始的,用i控制比較快
+        peko = os.path.join(root) #檔案位置
+        ina = peko + 'origin' + str(i) + '.png' #檔案名稱+位置 檔案名稱是1開始的,用i控制比較快
         #print(peko)
         print(ina)
         img  = cv2.imread(ina)
